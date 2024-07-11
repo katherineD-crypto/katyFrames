@@ -12,7 +12,7 @@ import type { Address } from 'viem';
 // }
 
 export const app = new Frog({
-  title:'Almost a painting',
+  title:'Blur',
   assetsPath: '/',
   basePath: '/api',
   // Supply a Hub to enable frame verification.
