@@ -22,7 +22,7 @@ export const app = new Frog({
 app.frame('/', (c) => {
   return c.res({
     action: "/finish",
-    image: "https://gateway.lighthouse.storage/ipfs/bafybeigseh4qt65vgipars2lgo4krak4zct7ijyn3ayi6st7gvtb7g2mpu",
+    image: "https://gateway.lighthouse.storage/ipfs/bafkreianrrvai7h45mbdoynu7ow5yuq6umwyhb73wrhtsgkpvusoivnjxq",
     intents: [
       
       <Button.Transaction target="/mint">Mint</Button.Transaction>,
@@ -43,7 +43,7 @@ app.transaction('/mint', (c) => {
   const address = c.address as Address;
   console.log('address', address);
   const tokenId = 0;
-  const uri = 'https://gateway.lighthouse.storage/ipfs/bafkreigxhqkkoqn42b6tnuunmnww6ngnubzefnktxnimcnyt2tq5cnjfv4'; // Fixed URI
+  const uri = 'https://gateway.lighthouse.storage/ipfs/bafkreigreo47kwqhyjycvnwyymal7kt4bgvesj47a53z43upsmdoc7sb7a'; // Fixed URI
 
   console.log('address', address);
   console.log('tokenId', tokenId);
@@ -56,7 +56,7 @@ app.transaction('/mint', (c) => {
     chainId: 'eip155:42161', // arbitrum one
     functionName: 'safeMint',
     args: [address, uri],
-    to: '0xE4D2ce5f8fd8c17A9aC3955B01dAdF50d5EECe48' // arbitrum one 0xE4D2ce5f8fd8c17A9aC3955B01dAdF50d5EECe48
+    to: '0x0b59e2Ac542Cb0567d0D2e15109e041B65973a9c' // arbitrum one 0xE4D2ce5f8fd8c17A9aC3955B01dAdF50d5EECe48
   });
 });
 
