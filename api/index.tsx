@@ -12,7 +12,7 @@ import type { Address } from 'viem';
 // }
 
 export const app = new Frog({
-  title:'Blur',
+  title:'Bye sun',
   assetsPath: '/',
   basePath: '/api',
   // Supply a Hub to enable frame verification.
@@ -22,7 +22,7 @@ export const app = new Frog({
 app.frame('/', (c) => {
   return c.res({
     action: "/finish",
-    image: "https://gateway.lighthouse.storage/ipfs/bafkreianrrvai7h45mbdoynu7ow5yuq6umwyhb73wrhtsgkpvusoivnjxq",
+    image: "https://gateway.lighthouse.storage/ipfs/bafkreifds6a7adz7trerslsaenwwx5bh3z32pxx2jdx5jrjc3ezxwsou6i",
     intents: [
       
       <Button.Transaction target="/mint">Mint</Button.Transaction>,
@@ -43,7 +43,7 @@ app.transaction('/mint', (c) => {
   const address = c.address as Address;
   console.log('address', address);
   const tokenId = 0;
-  const uri = 'https://gateway.lighthouse.storage/ipfs/bafkreigreo47kwqhyjycvnwyymal7kt4bgvesj47a53z43upsmdoc7sb7a'; // Fixed URI
+  const uri = 'https://gateway.lighthouse.storage/ipfs/bafkreihl42kpwk7sxili63ewzw6ogddg3eweg5v24u33fqgtbqy3m7rohu'; // Fixed URI
 
   console.log('address', address);
   console.log('tokenId', tokenId);
@@ -56,7 +56,7 @@ app.transaction('/mint', (c) => {
     chainId: 'eip155:42161', // arbitrum one
     functionName: 'safeMint',
     args: [address, uri],
-    to: '0x0b59e2Ac542Cb0567d0D2e15109e041B65973a9c' // arbitrum one 0xE4D2ce5f8fd8c17A9aC3955B01dAdF50d5EECe48
+    to: '0x8deEC033385F78f6135A909D1A3fc6a8a2e56576' // arbitrum one 0xE4D2ce5f8fd8c17A9aC3955B01dAdF50d5EECe48
   });
 });
 
